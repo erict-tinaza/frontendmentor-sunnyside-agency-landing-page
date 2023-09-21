@@ -1,0 +1,77 @@
+:root {
+  font-size: 62.5%;
+  /* Primary */
+  --Soft-red: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --Dark-blue: hsl(198, 62%, 26%);
+  --Dark-moderate-cyan: hsl(168, 34%, 41%);
+  /* 
+### Neutral */
+
+  --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+}
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+}
+img {
+  width: 100%;
+}
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  display: inline-block;
+}
+h1,
+h2 {
+  margin-top: 0;
+}
+p {
+  margin: 0;
+}
+li {
+  list-style: none;
+  padding: 0;
+ 
+}
+
+header{
+  background-image: url('../images/mobile/image-header.jpg');
+  padding:1em 0 25em 0;
+  background-size: cover;
+  background-position: center;
+}
+header h1{
+  color: var(--White);
+}
+.logo{
+  width: 130px;
+
+}
+.hamburger__menu{
+
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+}
