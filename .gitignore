@@ -17,3 +17,6 @@
 
 ##Ignore design folder
 design/
+
+##ignore .md
+*.md
