@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
 :root {
   font-size: 62.5%;
   /* Primary */
@@ -27,7 +29,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1.8rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 img {
   width: 100%;
@@ -41,6 +43,8 @@ a:active {
 h1,
 h2 {
   margin-top: 0;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
 }
 p {
   margin: 0;
@@ -48,30 +52,170 @@ p {
 li {
   list-style: none;
   padding: 0;
- 
 }
 
-header{
-  background-image: url('../images/mobile/image-header.jpg');
-  padding:1em 0 25em 0;
+header {
+  background-image: url("../images/mobile/image-header.jpg");
+  padding: 1em 0 10em 0;
+  background-position: bottom;
   background-size: cover;
-  background-position: center;
+  background-repeat: repeat-y;
+  position: relative;
 }
-header h1{
+header h1 {
   color: var(--White);
+  padding: 2.5em 0;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 4rem;
 }
-.logo{
+.logo {
   width: 130px;
-
 }
-.hamburger__menu{
-
+.hamburger__menu {
 }
-.container{
+.arrow__down-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.arrow__down-wrapper img {
+  width: 3.5rem;
+  position: absolute;
+  top: 17.5em;
+}
+.container {
   width: 90%;
   margin: 0 auto;
 }
-.row{
+.row {
   display: flex;
   justify-content: space-between;
+}
+
+.main__transform, .main__stand-out{
+  padding: 2.5em 0;
+  text-align: center;
+}
+.main__transform h2,
+.main__stand-out h2 {
+  font-size: 3.6rem;
+  color: var(--Very-dark-desaturated-blue);
+}
+.main__transform p,
+.main__stand-out p {
+  color: var(--Dark-grayish-blue);
+  margin-bottom: 1em;
+  font-size: 2.1rem;
+}
+.main__transform a,
+.main__stand-out a{
+  color: var(--Very-dark-desaturated-blue);
+  font-size: 1.8rem;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.design__photography{
+  position: relative;
+
+}
+.great__design img{
+  position: relative;
+  margin-bottom: 0;
+}
+.great__design-text{
+  
+  position: relative;
+  top: -28rem;
+  color: var(--Dark-desaturated-cyan);
+  text-align: center;
+  padding: 0 1.5em;
+}
+.great__design h2, .photography__text h2{
+  font-size: 3.5rem;
+}
+.great__design-text p{
+  line-height: 1.4;
+  font-size: 2.1rem;
+}
+.photography{
+  position: relative;
+}
+.photography img{
+  position: relative;
+  top:-23rem;
+ margin: 0;
+
+}
+.photography__text{
+  position: relative;
+  top: -45rem;
+  color: var(--Dark-desaturated-cyan);
+  text-align: center;
+  padding: 0 1.5em;
+
+}
+.photography__text{
+
+}
+.testimonials{
+
+  position:relative;
+  top: -38rem;
+
+  text-align: center;
+
+}
+.profile__img{
+  width: 9rem;
+  margin: 0 auto;
+  
+}
+.profile__img img{
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.client__testimonials{
+  line-height: 1.5;
+  padding: 2em 0;
+}
+.client__testimony {
+  color: var(--Very-dark-grayish-blue);
+}
+.client__name{
+  color: var(--Very-dark-desaturated-blue);
+  font-family: "Fraunces", serif;
+  padding: 1em 0 .5em 0;
+
+}
+.client__job{
+  color: var(--Grayish-blue);
+  font-size: 1.4rem;
+  
+}
+.testimonials h2{
+  color: var(--Grayish-blue);
+  padding: 2.5em 0;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: .2em;
+
+
+}
+.img__gallery img{
+  line-height: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 560px) {
+  header {
+    background-image: url("../images/desktop/image-header.jpg");
+  }
 }
