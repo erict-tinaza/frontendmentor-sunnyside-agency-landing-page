@@ -29,7 +29,7 @@
   <body>
     <header>
       <div class="container">
-        <div class="row">
+        <div class="flex jc_space-between">
           <a href="#" class="logo">
             <img src="./images/logo.svg" alt="" />
           </a>
@@ -38,16 +38,29 @@
           </a>
         </div>
         <nav>
-          <ul>
-            <!-- <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Contact</li> -->
-          </ul>
+          <div class="modal__wrapper hidden">
+            <div class="nav__modal-triangle"></div>
+            <div class="nav__modal">
+              <ul class="nav__list col">
+                <li class="nav__item">
+                  <a class="nav__item-link" href="#">About</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__item-link" href="#">Services</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__item-link" href="#">Projects</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__item-link contact__btn" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
         <h1>We are creatives</h1>
         <div class="arrow__down-wrapper">
-          <img class="logo" src="./images/icon-arrow-down.svg" alt="" />
+          <img class="arrow__down-img vert-move" src="./images/icon-arrow-down.svg" alt="" />
         </div>
       </div>
     </header>
@@ -83,7 +96,7 @@
     <section class="design__photography">
       <div class="great__design">
         <img src="./images/mobile/image-graphic-design.jpg" alt="" />
-        <div class="great__design-text">
+        <div class="great__design-text container">
           <h2>Graphic design</h2>
           <p>
             Graphic design makes you memorable. We deliver artwork that
@@ -172,27 +185,32 @@
           <img src="./images/logo-footer.svg" alt="" />
         </div>
 
-      <ul class="footer__nav row">
-        <li class="footer__link-item">About</li>
-        <li class="footer__link-item">Services</li>
-        <li class="footer__link-item">Projects</li>
-      </ul>
-      <ul class="social__media-links">
-        <li class="fb__link">
-          <a href="#"><img src="./images/icon-facebook.svg" alt="" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="./images/icon-instagram.svg" alt="" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="./images/icon-twitter.svg" alt="" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="./images/icon-pinterest.svg" alt="" /></a>
-        </li>
-      </ul>
-
-    </div>
+        <ul class="footer__nav row">
+          <li class="footer__list-item">
+            <a class="footer__link-item" href="#">About</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__link-item" href="#">Services</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__link-item" href="#">Projects</a>
+          </li>
+        </ul>
+        <ul class="social__media-links row">
+          <li class="fb__link">
+            <a href="#"><img src="./images/icon-facebook.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/icon-instagram.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/icon-twitter.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/icon-pinterest.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
     </footer>
     <!-- <div class="attribution">
       Challenge by
@@ -200,5 +218,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
+    <script src="js/app.js"></script>
   </body>
 </html>
