@@ -178,10 +178,7 @@ header h1 {
   -ms-border-radius: 2em;
   -o-border-radius: 2em;
 }
-.contact__btn:hover {
-  background-color: hsla(0, 0%, 100%, 0.342);
-  color: var(--White);
-}
+
 .logo {
   width: 130px;
 }
@@ -410,6 +407,10 @@ footer {
   .contact__btn {
     background-color: var(--White);
     color: var(--Dark-blue);
+  }
+  .contact__btn:hover {
+    background-color: hsla(0, 0%, 100%, 0.342);
+    color: var(--White);
   }
   .main__transform {
     margin: 0 auto;
