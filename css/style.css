@@ -377,6 +377,7 @@ img.vert-move {
 footer {
   background-color: #87dbc7;
   padding: 4em 0;
+  position: relative;
 }
 .footer__logo {
   width: 15rem;
@@ -399,6 +400,21 @@ footer {
   width: 60%;
   max-width: 250px;
   margin: 0 auto;
+  padding-top: 3em;
+}
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.attribution p {
+  color: var(--Dark-blue);
+}
+.coder {
+  color: var(--Soft-red);
 }
 @media (min-width: 500px) {
   .great__design-text,
@@ -468,29 +484,6 @@ footer {
     display: block;
     width: 50%;
   }
-  /* .main__transform-img {
-    width: 100%;
-    max-width: 720px;
-    max-height: 600px;
-    background-image: url("../images/desktop/image-transform.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-
-  .main__standout-img {
-    outline: 1px solid red;
-    width: 100%;
-    max-width: 720px;
-    max-height: 600px;
-    background-image: url("../images/desktop/image-stand-out.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-    .main__standout-img img {
-
-    visibility:hidden;
-    width: 100%;
-  } */
 }
 
 @media (min-width: 900px) {
