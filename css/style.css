@@ -69,6 +69,7 @@ header {
   background-size: cover;
   background-repeat: repeat-y;
   position: relative;
+  min-height: 100vh;
 }
 header h1 {
   color: var(--White);
