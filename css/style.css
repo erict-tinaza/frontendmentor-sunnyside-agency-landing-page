@@ -79,6 +79,46 @@ header h1 {
   letter-spacing: 0.5rem;
   font-size: 4rem;
 }
+.underline-soft_red::after,
+.underline-yellow::after {
+  display: block;
+  content: "";
+  position: absolute;
+  border-radius: 2rem;
+  width: 8em;
+  height: 0.8rem;
+  left: -0.7rem;
+  right: 0rem;
+  bottom: 0;
+  opacity: 0.5;
+  background: var(--Soft-red);
+  z-index: -1;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.underline-yellow::after {
+  background-color: var(--Yellow);
+}
+.underline-soft_red:hover::after,
+.underline-yellow:hover::after {
+  opacity: 1;
+  color: var(--Dark-blue);
+}
+.underline-soft_red:hover,
+.underline-yellow:hover {
+  opacity: 1;
+}
+.main__standout a,
+.main__transform a {
+  position: relative;
+}
+.main__standout a:hover,
+.main__transform a:hover {
+  opacity: 1;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -182,8 +222,7 @@ header h1 {
 .logo {
   width: 130px;
 }
-.hamburger__menu {
-}
+
 .arrow__down-wrapper {
   width: 100%;
   display: flex;
@@ -242,6 +281,8 @@ img.vert-move {
   font-weight: 900;
 }
 .design__photography {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .great__design {
@@ -284,6 +325,8 @@ img.vert-move {
 .testimonials {
   text-align: center;
   padding: 3em 0;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .profile__img {
   width: 9rem;
@@ -322,13 +365,14 @@ img.vert-move {
 }
 .img__gallery img {
   line-height: 0;
-
   margin: 0;
   padding: 0;
 }
 .img__gallery {
   display: flex;
   justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 footer {
   background-color: #87dbc7;
@@ -420,7 +464,7 @@ footer {
     margin: 0 auto;
     max-width: 1400px;
   }
-  .img__gallery div{
+  .img__gallery div {
     display: block;
     width: 50%;
   }
@@ -503,24 +547,28 @@ footer {
   }
   .img__gallery div {
     display: flex;
-   
+
     width: 50%;
   }
-  .img__gallery div img{
+  .img__gallery div img {
     width: 50%;
     flex-wrap: wrap;
     max-width: 1400px;
   }
   .milk-bottles {
     content: url("../images/desktop/image-gallery-milkbottles.jpg");
+    order: 1;
   }
   .ice_cream-cone {
     content: url("../images/desktop/image-gallery-cone.jpg");
+    order: 3;
   }
   .orange {
     content: url("../images/desktop/image-gallery-orange.jpg");
+    order: 2;
   }
   .sugar_cubes {
     content: url("../images/desktop/image-gallery-sugarcubes.jpg");
+    order: 4;
   }
 }
